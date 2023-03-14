@@ -20,11 +20,14 @@ def BM(T, K, M):
     return A 
 
 import matplotlib.pyplot as plt
-def viz(A):
+def viz(A, title=None):
     """draw BM sample paths"""
     t = np.linspace(0, 1, A.shape[0], endpoint=True)
     for path in A.T:
         plt.plot(t, path)
+    
+    if title is not None:
+        plt.title(title)
 
 if __name__=="__main__":
     A= BM(1, 10**5, 5)
