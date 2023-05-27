@@ -13,4 +13,8 @@ Sample midpoints in a brownian bridge path.
 Calculate the expected return on a european option, modelling stock as a geometric brownian motion.
 
 ### Approximating Geometric Brownian Motion
-By sampling discrete steps approximate geometric brownian motion, compare solution and rate of convergence with exact solution. 
+By sampling discrete steps approximate geometric brownian motion, compare solution and rate of convergence with exact solution.
+
+### Comparing Euler–Maruyama and Milstein approximations
+See `\EM_vs_Milstein\`, considers both the strong-error and the weak-error between the true schemes, for one particular SDE.
+
